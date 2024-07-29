@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "body-parse": "^0.1.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "gsap": "^3.12.5",
+    "locomotive-scroll": "^4.1.4",
+    "nodemailer": "^6.9.14"
+  }
+}

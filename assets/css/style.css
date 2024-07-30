@@ -3311,6 +3311,10 @@ a:hover {
   
   #heading3-alt {
     margin-top: 10px; /* Adjust this value as needed */
+    font-size: 800%;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-left: 100px;
   }
   .container-inner-alt {
     flex-direction: column;
@@ -3345,9 +3349,13 @@ a:hover {
     padding-bottom: 0;
     height: auto;
   }
-  .heading1-alt1{
+  .heading1-alt{
     padding-bottom: 0;
     margin-bottom: 0;
+    font-size: 300%;
+  font-weight: normal;
+  letter-spacing: -1.5px;
+
   }
   .image-wrapper-alt {
     display: flex;
@@ -3368,16 +3376,25 @@ a:hover {
     flex-direction: column;
     align-items: center;
     margin-top: 20px; /* Add space above "A2ik" */
+    font-size: medium;
   }
 
  
   #heading1-alt {
-    margin-top: 60px; /* Adjust this value as needed */
+    margin-top: 60px;
+    margin-left: 6px; /* Adjust this value as needed */
+    font-size: 300%;
+  font-weight: normal;
+  letter-spacing: -1px;
   }
 
   
   #heading3-alt {
     margin-top: 10px; /* Adjust this value as needed */
+    font-size: 500%;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-left: 6px;
   }
 }
 
@@ -3388,6 +3405,7 @@ a:hover {
 
   #heading1-alt {
     margin-top: 15px; /* Adjust this value as needed */
+
   }
 
   #heading3-alt {

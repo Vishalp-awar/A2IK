@@ -3158,6 +3158,7 @@ body {
   align-items: center;
   padding-top: 0;
   margin-top: 0;
+  
 }
 
 .container-alt {
@@ -3194,6 +3195,7 @@ body {
   display: flex;
   flex-direction: column;
   animation: scaleDown 2s ease 2s;
+  padding-bottom: 0;
 }
 
 .heading-alt {
@@ -3299,75 +3301,99 @@ a:hover {
     height: auto;
   }
 }
+
 @media (max-width: 992px) {
+ 
+  #heading1-alt {
+    margin-top: 60px; /* Adjust this value as needed */
+  }
+
+  
+  #heading3-alt {
+    margin-top: 10px; /* Adjust this value as needed */
+  }
   .container-inner-alt {
     flex-direction: column;
+    
   }
-  .heading-alt{
-    padding-top: 120px;
-   margin-top: 120px;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-   
-  }
-.image-container-alt {
-  width: 50%;
-  height: auto;
-}
+
   .main-content-alt, .image-wrapper-alt {
     flex-basis: 100%;
     width: 100%;
-    margin: 0 auto;
+    padding: 0;
+    margin: 0;
   }
 
   .main-headings-alt {
     text-align: center;
     margin-left: 0;
+    
   }
 
   .short-bio-alt {
+    
     width: 80%;
     margin: 0 auto;
   }
 
   .heading-alt {
-    margin: 20px auto;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: auto;
+  }
+  .heading1-alt1{
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .image-wrapper-alt {
+    display: flex;
+    justify-content: center;
+   
+ 
+     /* Adjust padding as needed */
+  }
+  .image-alt {
+    max-width: 450px; /* Ensure image fits within container */
+    height: 420px; /* Maintain aspect ratio */
+   
   }
 }
-
-
 @media (max-width: 768px) {
-  .short-bio-alt {
-    width: 90%;
+  .heading-alt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Add space above "A2ik" */
   }
 
-  #heading1-alt, #heading2-alt, #heading3-alt {
-    font-size: 300%;
+ 
+  #heading1-alt {
+    margin-top: 60px; /* Adjust this value as needed */
   }
 
+  
   #heading3-alt {
-    font-size: 500%;
+    margin-top: 10px; /* Adjust this value as needed */
   }
 }
 
 @media (max-width: 576px) {
-  .short-bio-alt {
-    width: 100%;
+  .heading-alt {
+    margin-top: 30px; /* Add more space above "A2ik" for smaller screens */
   }
 
-  #heading1-alt, #heading2-alt, #heading3-alt {
-    font-size: 200%;
+  #heading1-alt {
+    margin-top: 15px; /* Adjust this value as needed */
   }
 
   #heading3-alt {
-    font-size: 300%;
+    margin-top: 15px; /* Adjust this value as needed */
   }
 }
-
 
 /* style updown card */
 

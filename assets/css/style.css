@@ -3152,7 +3152,6 @@ image-child > img{
 body {
 
 }
-
 .main-section {
   background-image: url('../img/cta-bg.jpg');
   justify-content: center;
@@ -3168,126 +3167,188 @@ body {
   width: 1200px;
   height: 700px;
   font-size: 14px;
-  font-family: "Montserrat", sans;
-  .container-inner-alt {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container-inner-alt {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
+  animation: fade-in 1.5s ease, slide-in 1.2s ease;
+}
+
+.main-content-alt {
+  flex-basis: 50%;
+  order: 1;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-headings-alt {
+  width: 100%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  animation: scaleDown 2s ease 2s;
+}
+
+.heading-alt {
+  margin-top: 20px;
+  margin-left: 80px;
+}
+
+#heading1-alt, #heading2-alt, #heading3-alt {
+  margin: 0;
+  margin-top: -20px;
+}
+
+#heading1-alt, #heading2-alt {
+  font-size: 500%;
+  font-weight: normal;
+  letter-spacing: -2px;
+}
+
+#heading1-alt {
+  margin-left: 50px;
+}
+
+#heading2-alt {
+  margin-left: 150px;
+  margin-bottom: 10px;
+}
+
+#heading3-alt {
+  margin-top: -52px;
+  font-size: 1100%;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-left: 150px;
+}
+
+.short-bio-alt {
+  width: 60%;
+  margin-top: -30px;
+  margin-left: 125px;
+  font-size: 105%;
+}
+
+a {
+  margin-left: 92px;
+  align-self: flex-start;
+  font-weight: bold;
+  font-size: 120%;
+  font-family: helvetica;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.more-info-alt {
+  margin-top: -70px;
+  width: 50%;
+  height: 0;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: flex-start;
+  overflow: scroll;
+  overflow: hidden;
+  padding-top: 50px;
+  animation: reveal-info 4s ease 3s;
+}
+
+.image-wrapper-alt {
+  flex-basis: 50%;
+  order: 2;
+}
+
+.image-container-alt {
+  width: 90%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  animation: scaleDown 2s ease 2s;
+}
+
+.image-alt {
+  width: 100%;
+  height: auto;
+  border-radius: 15%;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.image-wrapper-alt > img {
+  background: transparent;
+}
+
+@media (max-width: 1200px) {
+  .container-alt {
     width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    position: relative;
-    animation: fade-in 1.5s ease, slide-in 1.2s ease;
-    -webkit-animation: fade-in 1.5s ease, slide-in 1.2s ease;
-    .main-content-alt {
-      flex-basis: 50%;
-      order: 1;
-      align-self: center;
-      display: flex;
-      flex-direction: column;
-      .main-headings-alt {
-        width: 100%;
-        align-self: center;
-        display: flex;
-        flex-direction: column;
-        animation: scaleDown 2s ease 2s;
-        -webkit-animation: scaleDown 2s ease 2s;
-        #by-line-alt {
-          width: 60%;
-          padding-bottom: 1px;
-          padding-left: 3px;
-          margin-left: 15px;
-          font-size: 85%;
-          border-bottom: 1px solid #757575;
-          font-style: italic;
-        }
-        .heading-alt {
-          margin-top: 20px;
-          margin-left: 80px;
-          #heading1-alt, #heading2-alt, #heading3-alt {
-            margin: 0;
-            margin-top: -20px;
-          }
-          #heading1-alt, #heading2-alt {
-            font-size: 500%;
-            font-weight: normal;
-            letter-spacing: -2px;
-          }
-          #heading1-alt {
-            margin-left: 50px;
-          }
-          #heading2-alt {
-            margin-left: 150px;
-            margin-bottom: 10px;
-          }
-          #heading3-alt {
-            margin-top: -52px;
-            font-size: 1100%;
-            font-weight: 800;
-            letter-spacing: 2px;
-            margin-left: 150px;
-          }
-        }
-        .short-bio-alt {
-          width: 60%;
-          margin-top: -30px;
-          margin-left: 125px;
-          font-size: 105%;
-        }
-        a {
-          margin-left: 92px;
-          align-self: flex-start;
-          font-weight: bold;
-          font-size: 120%;
-          font-family: helvetica;
-          text-decoration: none;
-          color: black;
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
-      .more-info-alt {
-        margin-top: -70px;
-        width: 50%;
-        height: 0;
-        margin-left: auto;
-        margin-right: auto;
-        align-self: flex-start;
-        overflow: scroll;
-        overflow: hidden;
-        padding-top: 50px;
-        animation: reveal-info 4s ease 3s;
-        -webkit-animation: reveal-info 4s ease 3s;
-      }
-    }
-    .image-wrapper-alt {
-      flex-basis: 50%;
-      order: 2;
-      .image-container-alt {
-        width: 90%;
-        height: 100%;
-        overflow: hidden;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        animation: scaleDown 2s ease 2s;
-        -webkit-animation: scaleDown 2s ease 2s;
-        img {
-          width: 100%;
-          height: auto;
-          border-radius: 15%;
-          position: relative;
-          background-repeat: no-repeat;
-          
-        }
-      }
-    }
+    height: auto;
   }
 }
 
-image-wrapper-alt > img{
-  background: transparent;
+@media (max-width: 992px) {
+  .container-inner-alt {
+    flex-direction: column;
+  }
+
+  .main-content-alt, .image-wrapper-alt {
+    flex-basis: 100%;
+    width: 100%;
+  }
+
+  .main-headings-alt {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .short-bio-alt {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .heading-alt {
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .short-bio-alt {
+    width: 90%;
+  }
+
+  #heading1-alt, #heading2-alt, #heading3-alt {
+    font-size: 300%;
+  }
+
+  #heading3-alt {
+    font-size: 500%;
+  }
+}
+
+@media (max-width: 576px) {
+  .short-bio-alt {
+    width: 100%;
+  }
+
+  #heading1-alt, #heading2-alt, #heading3-alt {
+    font-size: 200%;
+  }
+
+  #heading3-alt {
+    font-size: 300%;
+  }
 }
 
 

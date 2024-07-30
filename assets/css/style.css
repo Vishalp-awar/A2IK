@@ -3199,6 +3199,8 @@ body {
 .heading-alt {
   margin-top: 20px;
   margin-left: 80px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 #heading1-alt, #heading2-alt, #heading3-alt {
@@ -3269,7 +3271,7 @@ a:hover {
 }
 
 .image-container-alt {
-  width: 90%;
+  width: 75%;
   height: 100%;
   overflow: hidden;
   display: flex;
@@ -3297,15 +3299,26 @@ a:hover {
     height: auto;
   }
 }
-
 @media (max-width: 992px) {
   .container-inner-alt {
     flex-direction: column;
   }
-
+  .heading-alt{
+    padding-top: 120px;
+   margin-top: 120px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+   
+  }
+.image-container-alt {
+  width: 50%;
+  height: auto;
+}
   .main-content-alt, .image-wrapper-alt {
     flex-basis: 100%;
     width: 100%;
+    margin: 0 auto;
   }
 
   .main-headings-alt {
@@ -3320,8 +3333,12 @@ a:hover {
 
   .heading-alt {
     margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
+
 
 @media (max-width: 768px) {
   .short-bio-alt {

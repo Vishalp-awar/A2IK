@@ -1983,6 +1983,10 @@ p {
   overflow: hidden;
   overlay: auto;
 } */
+ .main-card{
+  margin-right: 50px;
+  padding-right: 50px;
+ }
 .flip-card {
   width: 300px;
   height: 300px;
